@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+    <div>       
+        User Name: <input class="form-control" (input)="onUpdateUserName($event)" [(ngModel)]="userName" />
+        <p>{{userName}}</p>
+         <button [disabled]="!enableReset" class="btn btn-primary" (click)="resetUserName()">Reset</button>
+    </div>
+</div>
+
