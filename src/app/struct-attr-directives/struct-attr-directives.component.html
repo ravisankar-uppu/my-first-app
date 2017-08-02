@@ -1,0 +1,9 @@
+<div class="container">    
+    <div class="form-group">
+        <label>Server Name</label>
+        <input class="form-control" (input)="onUpdateServer($event)" /><br/>
+        <button [disabled]="!createServer" class="btn btn-primary" (click)="onCreateServer()">Create Server</button> <br/><br/>
+        <p *ngIf="isServerCreated">Server is created with name {{serverName}}</p>
+        <p *ngIf="!isServerCreated">There is no server created...!!!</p>
+    </div>
+</div>

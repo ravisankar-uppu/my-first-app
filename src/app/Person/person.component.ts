@@ -16,9 +16,9 @@ export class PersonComponent{
     serverName:string="";
 
     constructor(){
-        setTimeout(()=>{
-            this.createServer=true;
-        },2000);
+        // setTimeout(()=>{
+        //     this.createServer=true;
+        // },2000);
     }
 
     onCreateServer(){
@@ -26,7 +26,10 @@ export class PersonComponent{
     }
 
     onUpdateServer(event: Event){
-        console.log(event);
         this.serverName=(<HTMLInputElement>event.target).value;
+        if(this.serverName.length>0)
+            this.createServer=true;
+        else
+            this.createServer=false;            
     }
 }

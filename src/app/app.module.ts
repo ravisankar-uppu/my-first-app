@@ -9,6 +9,8 @@ import {PersonsComponent} from './persons/persons.component';
 import {WarningComponent} from './Exercise-1/warning.component';
 import {SuccessComponent} from './Exercise-1/success.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { StructAttrDirectivesComponent } from './struct-attr-directives/struct-attr-directives.component';
+import { BindingExercisesComponent } from './binding-exercises/binding-exercises.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     PersonsComponent,
     WarningComponent,
     SuccessComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    StructAttrDirectivesComponent,
+    BindingExercisesComponent
   ],
   imports: [
     BrowserModule,

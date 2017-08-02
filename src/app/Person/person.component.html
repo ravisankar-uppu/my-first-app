@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-    <div class="panel-body width-80percent">
+    <!--<div class="panel-body width-80percent">
         <ul>
             <li>First Name :</li>{{firstName}}
             <li>Last Name :</li>{{lastName}}
@@ -10,11 +10,10 @@
         <ul>
             <li>Profile</li>
         </ul>
-    </div> 
+    </div> -->
     <div>
+        Server Name: <input class="form-control" (input)="onUpdateServer($event)" />
         <button [disabled]="!createServer" class="btn btn-primary" (click)="onCreateServer()">Create Server</button>
         <p [innerText]="serverCreated"></p>
-        Server Name: <input class="form-control" (input)="onUpdateServer($event)" />
-        <p>{{serverName}}</p>
     </div>
 </div>
