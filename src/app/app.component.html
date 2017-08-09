@@ -28,6 +28,18 @@
         <success-component></success-component>-->
         <!--<app-two-way-binding></app-two-way-binding>-->
         <!--<app-struct-attr-directives></app-struct-attr-directives>-->
-        <app-binding-exercises></app-binding-exercises>
+        <!--<app-binding-exercises></app-binding-exercises>-->
+        <app-game-control (emitCounter)="listenToCounter($event)"></app-game-control>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 navbar-left">
+                    <app-odd *ngFor="let i of counterOdd" [counter]="i"></app-odd>
+                </div>
+                <div class="col-sm-6 navbar-right">
+                    <app-even *ngFor="let i of counterEven" [counter]="i"></app-even>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -11,6 +11,9 @@ import {SuccessComponent} from './Exercise-1/success.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { StructAttrDirectivesComponent } from './struct-attr-directives/struct-attr-directives.component';
 import { BindingExercisesComponent } from './binding-exercises/binding-exercises.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { BindingExercisesComponent } from './binding-exercises/binding-exercises
     SuccessComponent,
     TwoWayBindingComponent,
     StructAttrDirectivesComponent,
-    BindingExercisesComponent
+    BindingExercisesComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
